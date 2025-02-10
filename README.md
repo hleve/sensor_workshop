@@ -21,9 +21,9 @@ For 3D printable enclosures: [3D Files](#) as well as in a collection on [Printa
 - `temperature_sensor.py`: Reads temperature data from the DHT11 sensor.
 
 **Usage**:
-1. Ensure the `Adafruit_DHT` library is installed:
+1. Ensure the `requirements.txt` are installed:
     ```sh
-    pip install Adafruit_DHT
+    pip install -r requirements.txt
     ```
 2. Run:
     ```sh
@@ -44,9 +44,9 @@ For 3D printable enclosures: [3D Files](#) as well as in a collection on [Printa
 - `pir_motion_sensor.py`: Reads motion data from the PIR sensor.
 
 **Usage**:
-1. Ensure the `RPi.GPIO` library is installed:
+1. Ensure the `requirements.txt` are installed:
     ```sh
-    pip install RPi.GPIO
+    pip install -r requirements.txt
     ```
 2. Run:
     ```sh
