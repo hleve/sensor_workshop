@@ -1,4 +1,4 @@
-# Environmental Data Collection Device
+# Environmental Data Collection using Raspberry Pi
 
 The goal of this project is on making the entire process as user-friendly and accessible as possible.
 
