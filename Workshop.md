@@ -42,7 +42,7 @@
 - Workshop wrap-up and next steps
 
 ## Required Materials
-- 15 Raspberry Pi units (5 per group)
+- 3 Raspberry Pi units (1 per group)
 - Various sensors (temperature, humidity, motion, etc.)
 - Basic electronics (wires, breadboards, resistors)
 - SD cards and power supplies
