@@ -44,13 +44,16 @@
 ## Required Materials
 - 3 Raspberry Pi units (1 per group)
 - Various sensors (temperature, humidity, motion, etc.)
-- Basic electronics (wires, breadboards, resistors)
-- SD cards and power supplies
-- Network connectivity equipment
+- Basic electronics (wires, breadboards, ect.)
+- Micro SD cards and power supplies
 
 ## Pre-Workshop Preparation
-- Install necessary software
-  - [BitVise SSH Client](https://bitvise.com/ssh-client-download)
+- Install software
+  - Required
+    - [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
+    - [BitVise SSH Client](https://bitvise.com/ssh-client-download)
+  - Optional
+    - [Microsoft Visual Studio Code](https://code.visualstudio.com/download)
 - Test all Raspberry Pi Zero units
 - Prepare sample code
 - Create backup equipment
