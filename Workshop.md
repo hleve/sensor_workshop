@@ -43,9 +43,10 @@
 
 ## Required Materials (Supplied)
 - 3 Raspberry Pi units (1 per group)
-- Various sensors (temperature, humidity, motion, etc.)
+- 3 Pi Sugar Batteries (1 per RPi Zero)
+- Sensors (temperature, humidity, motion, etc.)
 - Basic electronics (wires, breadboards, ect.)
-- Micro SD cards and power supplies
+- Micro SD cards (1 per RPi Zero)
 
 ## Required Materials
 - Software
