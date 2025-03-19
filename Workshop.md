@@ -27,8 +27,8 @@
 ## Day 2: Data Analysis and Presentations (3 hours)
 
 ### Hour 1: Data Processing (60 minutes)
-- Data download and organization
-- Introduction to analysis tools
+- Data download via SFTP
+- Introduction to basic statistical analysis
 - Basic data cleaning techniques
 
 ### Hour 2: Visualization (60 minutes)
@@ -41,22 +41,22 @@
 - Q&A sessions
 - Workshop wrap-up and next steps
 
-## Required Materials
+## Required Materials (Supplied)
 - 3 Raspberry Pi units (1 per group)
 - Various sensors (temperature, humidity, motion, etc.)
 - Basic electronics (wires, breadboards, ect.)
 - Micro SD cards and power supplies
 
-## Pre-Workshop Preparation
-- Install software
+## Required Materials
+- Software
   - Required
     - [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
     - [BitVise SSH Client](https://bitvise.com/ssh-client-download)
+    - [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel)
   - Optional
     - [Microsoft Visual Studio Code](https://code.visualstudio.com/download)
-- Test all Raspberry Pi Zero units
-- Prepare sample code
-- Create backup equipment
+    - [ArcGIS](https://ucincinnati.maps.arcgis.com/home/index.html)
+    - [QGIS](https://qgis.org/download/)
 
 ## Group Project Guidelines
 1. Choose phenomena that can be measured in one week
