@@ -50,7 +50,7 @@
 
 ## Pre-Workshop Preparation
 - Install necessary software
-    - (BitVise SSH Client)[https://bitvise.com/ssh-client-download]
+  - [BitVise SSH Client](https://bitvise.com/ssh-client-download)
 - Test all Raspberry Pi Zero units
 - Prepare sample code
 - Create backup equipment
