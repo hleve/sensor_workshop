@@ -5,7 +5,7 @@
 ### Hour 1: Introduction (45 minutes)
 - Welcome and overview (10 min)
 - Presentation: Real-world sensor applications in research (20 min)
-- Live demonstration: Basic sensor setup with Raspberry Pi (15 min)
+- Live demonstration: Basic sensor setup with Raspberry Pi Zero (15 min)
 
 ### Hour 1-2: Project Planning (75 minutes)
 - Form three groups of five students each (5 min)
@@ -18,7 +18,7 @@
 - Quick presentations of initial ideas (30 min)
 
 ### Hour 3: Technical Setup (60 minutes)
-- Raspberry Pi setup and testing
+- Raspberry Pi Zero setup and testing
 - Basic sensor wiring
 - Initial code setup
 - Project materials distribution
@@ -50,10 +50,10 @@
 
 ## Pre-Workshop Preparation
 - Install necessary software
-- Test all Raspberry Pi units
+    - (BitVise SSH Client)[https://bitvise.com/ssh-client-download]
+- Test all Raspberry Pi Zero units
 - Prepare sample code
 - Create backup equipment
-- Print handout materials
 
 ## Group Project Guidelines
 1. Choose phenomena that can be measured in one week
