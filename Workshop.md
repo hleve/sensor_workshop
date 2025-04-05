@@ -53,6 +53,7 @@
   - Required
     - [Raspberry Pi Imager](https://www.raspberrypi.com/software/)
     - [BitVise SSH Client](https://bitvise.com/ssh-client-download)
+    - [Raspberry Pi Connect](https://connect.raspberrypi.com/sign-in)
     - [Microsoft Excel](https://www.microsoft.com/en-us/microsoft-365/excel)
   - Optional
     - [Microsoft Visual Studio Code](https://code.visualstudio.com/download)
@@ -61,7 +62,4 @@
 
 ## Group Project Guidelines
 1. Choose phenomena that can be measured in one week
-2. Consider spatial distribution of sensors
-3. Plan for data storage and transfer
-4. Think about potential interference or errors
-5. Consider ethical implications of data collection
+2. Consider ethical implications of data collection
