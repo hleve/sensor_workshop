@@ -5,9 +5,10 @@ In general, the workflow should be:
 
 ```mermaid
 graph LR;
-A[Python File] --> B[Sensor]
-B <--> C[.CSV or .XLSX]
-C <--> D[Excel or GIS]
+A[Raspberry Pi] -->B[Python File]
+B --> C[Sensor]
+C --> D[.CSV or .XLSX]
+D --> F[Excel or GIS]
 ```
 
 
