@@ -3,10 +3,12 @@
 The goal of this project is on making the entire process as user-friendly and accessible as possible.
 In general, the workflow should be:
 
+'''mermaid
 graph LR;
 A[Python File] --> B[Sensor]
 B <--> C[.CSV or .XLSX]
 C <--> D[Excel or GIS]
+'''
 
 
 ## Navigation
