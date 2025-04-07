@@ -24,7 +24,8 @@ For 3D printable enclosures: A collection on [Printables.com](https://www.printa
 1. Connect to the Raspberry Pi with SSH or Raspberry Pi Connect  
 2. Copy python script to Raspberry Pi.  
 3. Connect the sensor to the Raspberry Pi using 5v, Ground, TX and RX pins.
-4. Copy the Excel file from the Raspberry Pi for analysis.
+4. Run the python script to collect data over a set period of time and output an Excel or .CSV file
+5. Copy the Excel or .CSV file from the Raspberry Pi for analysis.
 
 **Example Python Script**:  
 - `your script name.py`: The python file that will perform data collection.
