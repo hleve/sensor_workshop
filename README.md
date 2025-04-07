@@ -1,6 +1,13 @@
 # Environmental Data Collection using Raspberry Pi
 
 The goal of this project is on making the entire process as user-friendly and accessible as possible.
+In general, the workflow should be:
+
+graph LR;
+A[Python File] --> B[Sensor]
+B <--> C[.CSV or .XLSX]
+C <--> D[Excel or GIS]
+
 
 ## Navigation
 For first time setup: [Directions for First Time Setup](#Directions-for-first-time-setup)  
