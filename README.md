@@ -1,6 +1,7 @@
 # Environmental Data Collection using Raspberry Pi
 
-The goal of this project is on making the entire process as user-friendly and accessible as possible.
+The goal of this project is to make the process of creating and using Raspberry Pi based Environmental Sensors as user-friendly and accessible as possible.
+
 In general, the workflow should be:
 
 ```mermaid
