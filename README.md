@@ -5,9 +5,10 @@ In general, the workflow should be:
 
 ```mermaid
 graph LR;
-A[Raspberry Pi] -->B[Python File]
+A[Create Python File] --> B[Copy to Raspberry Pi]
+B[Raspberry Pi] -->C[Run Python File]
 B --> C[Sensor]
-C --> D[.CSV or .XLSX]
+C --> D[Export Data as .CSV or .XLSX]
 D --> F[Excel or GIS]
 ```
 
