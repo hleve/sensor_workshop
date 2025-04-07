@@ -3,11 +3,34 @@
 The goal of this project is on making the entire process as user-friendly and accessible as possible.
 
 ## Navigation
-For first time setup: [Directions for First Time Setup](#directions-for-first-time-setup)  
-For information on Modules: [Sensors and Modules](#sensors-and-modules)  
-For 3D printable enclosures: [3D Files](#) as well as in a collection on [Printables.com](https://www.printables.com/@HenryLevesque/collections/1649941)
+For first time setup: [Directions for First Time Setup](#Directions-for-first-time-setup)  
+For information on Sensors: [Sensors](#Sensors.md)  
+For 3D printable enclosures: A collection on [Printables.com](https://www.printables.com/@HenryLevesque/collections/1649941)
 
-## Sensors
+
+# Directions for first time setup
+**Setup**:
+1. Connect to the Raspberry Pi with SSH or Raspberry Pi Connect  
+2. Copy python script to Raspberry Pi.  
+3. Connect the sensor to the Raspberry Pi using 5v, Ground, TX and RX pins.
+4. Copy the Excel file from the Raspberry Pi for analysis.
+
+**Example Python Script**:  
+- `your script name.py`: The python file that will perform data collection.
+
+**Usage**:
+1. Ensure the `requirements.txt` are installed:
+    ```sh
+    pip install -r requirements.txt
+    ```
+2. Run:
+    ```sh
+    python3 your script name.py
+    ```
+**Output**:
+- Saves data to `your script name.xlsx` with timestamps.
+
+## Example Sensors
 
 ### Temperature Sensor
 **Model**: DHT11
