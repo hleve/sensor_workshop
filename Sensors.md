@@ -1,6 +1,46 @@
-# Sensors
+# All Sensors
+    Capacitive Touch
+    PIR Motion
+    Linear Temperature
+    Collision Sensor
+    Soil Moisture
+    Photocell
+    Water Level
+    Analog Rotation
+    Analog Temperature
+    Flame Alarm
+    Knock Sensor
+    IR Obstacle Avoidance
+    Analog Ceramic Vibration
+    Ultrasound
+    Rotary Encoder
+    Temperature and Humidity Display
+    Steam Moisture
+    Analog Sound
+    Joystick
+    4-digit LED Digital Tube
+    White LED
+    Passive Buzzer
+    Active Buzzer
+    Digital IR Receiver
+    Digital IR Transmitter
+    Button
+    Reed Switch
+    Line Tracking
+    Traffic Light
+    Hall Sensor
+    Motor Module
+    Pulse Rate Monitor
+    Single Relay
+    Analog Sound
+    Digital Tilt 
+    Voltage Detection
+    RGB LED
 
-## Temperature Sensor
+
+## Sample scripts
+
+### Temperature Sensor
 **Model**: DHT11
 
 **Setup**:
@@ -23,7 +63,7 @@
 **Output**:
 - Saves data to `temperature_data.xlsx` with timestamps.
 
-## PIR Motion Sensor
+### PIR Motion Sensor
 **Model**: HC-SR501
 
 **Setup**:
