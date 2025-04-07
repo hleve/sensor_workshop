@@ -4,7 +4,7 @@ The goal of this project is on making the entire process as user-friendly and ac
 
 ## Navigation
 For first time setup: [Directions for First Time Setup](#Directions-for-first-time-setup)  
-For information on Sensors: [Sensors](sensor_workshop/Sensors.md)  
+For information on Sensors: [Sensors](/Sensors.md)  
 For 3D printable enclosures: A collection on [Printables.com](https://www.printables.com/@HenryLevesque/collections/1649941)
 
 
