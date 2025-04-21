@@ -10,14 +10,13 @@ For 3D printable enclosures: [3D Files](#) as well as in a collection on [Printa
 # Linux Commands for Raspberry Pi
 
 ## Basic Terminal Navigation
-- `pwd` - Print working directory (shows current location)
 - `ls` - List files in current directory
 - `cd [directory]` - Change directory
 - `mkdir [name]` - Create new directory
 - `rm [file]` - Remove file
 - `rm -r [directory]` - Remove directory and contents
 
-## Understanding sudo
+## Sudo
 `sudo` stands for "SuperUser DO". It temporarily grants admin (root) privileges to execute commands that require elevated permissions. Always use caution with sudo commands.
 
 Here's what you need to know about sudo:
@@ -31,7 +30,6 @@ Here's what you need to know about sudo:
    - Modifying system files (`sudo nano /etc/hostname`)
    - Hardware access (`sudo raspi-config`)
 
-WARNING: Be very careful with sudo commands - they can modify system files and potentially damage your system if used incorrectly.
 
 Best Practices:
 - Double-check sudo commands before running them
