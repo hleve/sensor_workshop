@@ -134,5 +134,3 @@ nano [filename]
 # Ctrl + X : Exit
 # Ctrl + W : Search
 ```
-
-Remember: Always be careful with sudo commands and double-check before executing them!
