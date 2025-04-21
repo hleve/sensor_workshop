@@ -1,91 +1,140 @@
-# Environmental Data Collection using Raspberry Pi
+# Environmental Data Collection using Raspberry Pi Zero
 
-The goal of this project is to make the process of creating and using Raspberry Pi based Environmental Sensors as user-friendly and accessible as possible.
-
-In general, the workflow should be:
-
-```mermaid
-graph LR;
-A[Create Python File] --> B[Copy to Raspberry Pi] -->C[Connect sensor to Raspberry Pi]
-C --> D[Run Python File]
-D --> E[Export Data as .CSV or .XLSX]
-E --> F[Copy .CSV or .XLSX file from Raspberry Pi]
-```
-
+The goal of this project is on making the entire process as user-friendly and accessible as possible.
 
 ## Navigation
-For first time setup: [Directions for First Time Setup](#Directions-for-first-time-setup)  
-For information on Sensors: [Sensors](/Sensors.md)  
-For 3D printable enclosures: A collection on [Printables.com](https://www.printables.com/@HenryLevesque/collections/1649941)
+For first time setup: [Directions for First Time Setup](#directions-for-first-time-setup)  
+For information on Modules: [Sensors and Modules](#sensors-and-modules)  
+For 3D printable enclosures: [3D Files](#) as well as in a collection on [Printables.com](https://www.printables.com/@HenryLevesque/collections/1649941)
 
+# Linux Commands for Raspberry Pi
 
-# Directions for first time setup
-**Setup**:
-1. Connect to the Raspberry Pi with SSH or Raspberry Pi Connect  
-2. Copy python script to Raspberry Pi.  
-3. Connect the sensor to the Raspberry Pi using 5v, Ground, TX and RX pins.
-4. Run the python script to collect data over a set period of time and output an Excel or .CSV file
-5. Copy the Excel or .CSV file from the Raspberry Pi for analysis.
+## Basic Terminal Navigation
+- `pwd` - Print working directory (shows current location)
+- `ls` - List files in current directory
+- `cd [directory]` - Change directory
+- `mkdir [name]` - Create new directory
+- `rm [file]` - Remove file
+- `rm -r [directory]` - Remove directory and contents
 
-**Example Python Script**:  
-- `your script name.py`: The python file that will perform data collection.
+## Understanding sudo
+`sudo` stands for "SuperUser DO". It temporarily grants admin (root) privileges to execute commands that require elevated permissions. Always use caution with sudo commands.
 
-**Usage**:
-1. Ensure the `requirements.txt` are installed:
-    ```sh
-    pip install -r requirements.txt
-    ```
-2. Run:
-    ```sh
-    python3 your script name.py
-    ```
-**Output**:
-- Saves data to `your script name.xlsx` with timestamps.
+Here's what you need to know about sudo:
 
-## Example Sensors
+1. **Purpose**: It allows regular users to execute commands with the security privileges of the superuser (root)
+2. **Security**: Only users in the 'sudo' group can use sudo commands
+3. **Password**: First sudo command requires password authentication (valid for 15 minutes)
+4. **Common uses**:
+   - Installing software (`sudo apt install`)
+   - Updating system (`sudo apt update`)
+   - Modifying system files (`sudo nano /etc/hostname`)
+   - Hardware access (`sudo raspi-config`)
 
-### Temperature Sensor
-**Model**: DHT11
+WARNING: Be very careful with sudo commands - they can modify system files and potentially damage your system if used incorrectly.
 
-**Setup**:
-1. Connect the VCC pin of the DHT11 sensor to the 3.3V pin on the Raspberry Pi.  
-2. Connect the GND pin of the DHT11 sensor to a GND pin on the Raspberry Pi.  
-3. Connect the DATA pin of the DHT11 sensor to GPIO pin 4 on the Raspberry Pi.
+Best Practices:
+- Double-check sudo commands before running them
+- Only use sudo when necessary
+- Never run sudo commands from untrusted sources
+- Keep your sudo password private
 
-**Python Script**:  
-- `temperature_sensor.py`: Reads temperature data from the DHT11 sensor.
+## Package Management
+```bash
+# Update package list
+sudo apt update
 
-**Usage**:
-1. Ensure the `requirements.txt` are installed:
-    ```sh
-    pip install -r requirements.txt
-    ```
-2. Run:
-    ```sh
-    python3 temperature_sensor.py
-    ```
-**Output**:
-- Saves data to `temperature_data.xlsx` with timestamps.
+# Upgrade installed packages
+sudo apt upgrade
 
-### PIR Motion Sensor
-**Model**: HC-SR501
+# Install new package
+sudo apt install [package-name]
 
-**Setup**:
-1. Connect the VCC pin of the PIR sensor to the 5V pin on the Raspberry Pi.  
-2. Connect the GND pin of the PIR sensor to a GND pin on the Raspberry Pi.  
-3. Connect the OUT pin of the PIR sensor to GPIO pin 17 on the Raspberry Pi.
+# Remove package
+sudo apt remove [package-name]
+```
 
-**Python Script**:  
-- `pir_motion_sensor.py`: Reads motion data from the PIR sensor.
+## Common Python Package Installation
+```bash
+# Install pip (Python package manager)
+sudo apt install python3-pip
 
-**Usage**:
-1. Ensure the `requirements.txt` are installed:
-    ```sh
-    pip install -r requirements.txt
-    ```
-2. Run:
-    ```sh
-    python3 pir_motion_sensor.py
-    ```
-**Output**:
-- Saves data to `motion_data.xlsx` with timestamps.
+# Install common sensor libraries
+sudo apt install python3-rpi.gpio
+sudo pip3 install adafruit-circuitpython-dht
+sudo apt install python3-pandas
+sudo apt install python3-matplotlib
+```
+
+## Network Commands
+```bash
+# Check network connectivity
+ping raspberrypi.local
+
+# Connect via SSH
+ssh [username]@[ip-address]
+
+# Check IP address
+hostname -I
+
+# Check wireless status
+iwconfig
+```
+
+## File Transfer Commands
+```bash
+# Copy from Raspberry Pi to local machine (run on your computer)
+scp [username]@[ip-address]:/path/to/file /local/destination
+
+# Copy from local machine to Raspberry Pi (run on your computer)
+scp /path/to/local/file [username]@[ip-address]:/remote/destination
+```
+
+## Raspberry Pi Connect Setup - if not already installed on rpi os
+1. On the Raspberry Pi:
+```bash
+# Download the Raspberry Pi Connect script
+curl -L https://downloads.raspberrypi.com/connect_agent_v1.sh | bash
+
+# Follow the prompts to complete setup
+```
+
+## Raspberry Pi Connect Setup - If using newer os versions with rpi-connect already installed
+1. Turn on and sign in to Raspberry Pi connect:
+```bash
+# Turn on Raspberry Pi Connect
+rpi-connect on
+
+# Signin to Raspberry Pi Connect
+rpi-connect signin
+
+# Follow the prompts to complete setup
+```
+
+## Important System Commands
+```bash
+# Safely reboot
+sudo reboot
+
+# Safely shutdown
+sudo shutdown -h now
+
+# Check system temperature
+vcgencmd measure_temp
+
+# Check disk space
+df -h
+```
+
+## File Editing
+```bash
+# Edit file with nano (beginner-friendly)
+nano [filename]
+
+# Basic nano commands:
+# Ctrl + O : Save
+# Ctrl + X : Exit
+# Ctrl + W : Search
+```
+
+Remember: Always be careful with sudo commands and double-check before executing them!
