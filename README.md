@@ -1,6 +1,6 @@
-# Environmental Data Collection using Raspberry Pi Zero
+# Environmental Data Collection Workshop using Raspberry Pi Zero
 
-The goal of this project is on making the entire process as user-friendly and accessible as possible.
+The goal of this reposotory is to provide directions, code, and documentation for running a workshop on using raspberry pi zero to build sensors to collect environmental data.
 
 ## Navigation
 For first time setup: [Directions for First Time Setup](#directions-for-first-time-setup)  
