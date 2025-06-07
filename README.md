@@ -16,7 +16,7 @@ For 3D printable enclosures: [3D Files](#) as well as in a collection on [Printa
 - `rm [file]` - Remove file
 - `rm -r [directory]` - Remove directory and contents
 
-## Sudo
+### Sudo
 `sudo` stands for "SuperUser DO". It temporarily grants admin (root) privileges to execute commands that require elevated permissions. Always use caution with sudo commands.
 
 Here's what you need to know about sudo:
