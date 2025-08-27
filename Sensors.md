@@ -49,12 +49,12 @@
 3. Connect the DATA pin of the DHT11 sensor to GPIO pin 4 on the Raspberry Pi.
 
 **Python Script**:  
-- `temperature_sensor.py`: Reads temperature data from the DHT11 sensor.
+- [`temperature_sensor.py`](python%20files/temperature_sensor.py): Reads temperature data from the DHT11 sensor.
 
 **Usage**:
-1. Ensure the `requirements.txt` are installed:
+1. Ensure the Python requirements are installed (see `INSTALL.md`):
     ```sh
-    pip install -r requirements.txt
+    pip3 install -r requirements-pip.txt
     ```
 2. Run:
     ```sh
@@ -72,12 +72,12 @@
 3. Connect the OUT pin of the PIR sensor to GPIO pin 17 on the Raspberry Pi.
 
 **Python Script**:  
-- `pir_motion_sensor.py`: Reads motion data from the PIR sensor.
+- [`pir_motion_sensor.py`](python%20files/pir_motion_sensor.py): Reads motion data from the PIR sensor.
 
 **Usage**:
-1. Ensure the `requirements.txt` are installed:
+1. Ensure the Python requirements are installed (see `INSTALL.md`):
     ```sh
-    pip install -r requirements.txt
+    pip3 install -r requirements-pip.txt
     ```
 2. Run:
     ```sh
@@ -85,3 +85,17 @@
     ```
 **Output**:
 - Saves data to `motion_data.xlsx` with timestamps.
+
+### Camera Capture
+**Python Script**:  
+- [`capture_images.py`](python%20files/capture_images.py): Uses `libcamera-still` to capture images on the Pi Camera.
+
+**Usage**:
+1. Ensure `libcamera-apps` is installed (see `INSTALL.md`).
+2. Run:
+    ```sh
+    python3 "python files/capture_images.py"
+    ```
+
+**Output**:
+- Images saved to the `captured_images/` folder by default.

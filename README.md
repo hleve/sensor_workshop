@@ -3,9 +3,10 @@
 The goal of this reposotory is to provide directions, code, and documentation for running a workshop on using raspberry pi zero to build sensors to collect environmental data.
 
 ## Navigation
-For first time setup: [Directions for First Time Setup](#directions-for-first-time-setup)  
-For information on Modules: [Sensors and Modules](#sensors-and-modules)  
-For 3D printable enclosures: [3D Files](#) as well as in a collection on [Printables.com](https://www.printables.com/@HenryLevesque/collections/1649941)
+For first time setup: [Directions for First Time Setup](Workshop.md)  
+For installation instructions and package setup: [Installation](INSTALL.md)  
+For information on Modules: [Sensors and Modules](Sensors.md)  
+For 3D printable enclosures: see the collection on [Printables.com](https://www.printables.com/@HenryLevesque/collections/1649941)
 
 # Linux Commands for Raspberry Pi
 

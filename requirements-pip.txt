@@ -1,0 +1,10 @@
+RPi.GPIO
+Adafruit_DHT
+pandas
+openpyxl
+pyserial
+pyaudio
+numpy
+
+# Install with:
+# pip3 install -r requirements-pip.txt

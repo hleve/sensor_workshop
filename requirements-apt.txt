@@ -1,0 +1,11 @@
+# System packages to install on Raspberry Pi OS (use apt)
+i2c-tools
+python3-smbus
+libatlas-base-dev
+libportaudio2
+libatlas3-base
+libjack0
+
+# Example install commands:
+# sudo apt update
+# sudo apt install i2c-tools python3-smbus libportaudio2
